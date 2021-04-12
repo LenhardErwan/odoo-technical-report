@@ -8,4 +8,4 @@ class Block(models.Model):
     order = fields.Integer('Order')
     image = fields.Image('Image')
     text = fields.Text('Text')
-    report_id = fields.One2many('tr.report', 'block_ids')
+    report_id = fields.One2many('tr.report', string='Report ID')
