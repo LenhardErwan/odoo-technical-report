@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+	<record id='tr_action' model='ir.actions.act_window'>
+		<field name="name">Technical Reports</field>
+		<field name="res_model">technicalreport.globalreport</field>
+		<field name="view_mode">tree,form</field>
+	</record>
+
+	<menuitem name="Technical Reports" id="tr_base_menu" />
+	<menuitem name="Global Reports" id="tr_global_report_menu" parent="tr_base_menu" action="tr_global_report_action" />
+
+	<record id="tr_global_report_view_form" model="ir.ui.view">
+		<field name="name">Global Report Form</field>
+		<field name="model">technicalreport.globalreport</field>
+		<field name="arch" type="xml">
+			<form>
+				<group>
+					<group>
+						<field name="name" />
+						<field name="report_ids" widget="one2many_tags" />
+					</group>
+					<group>
+						<field name="command_id" widget="many2one_tags" />
+					</group>
+				</group>
+			</form>
+		</field>
+	</record>
+
+	<record id="tr_global_report_view_tree" model="ir.ui.view">
+		<field name="name">Global Report List</field>
+		<field name="model">technicalreport.globalreport</field>
+		<field name="arch" type="xml">
+			<tree>
+				<field name="name" />
+				<field name="command_id" widget="many2one_tags" />
+			</tree>
+		</field>
+	</record>
+
+	<record id="tr_global_report_view_search" model="ir.ui.view">
+		<field name="name">Global Report Search</field>
+		<field name="model">technicalreport.globalreport</field>
+		<field name="arch" type="xml">
+			<search>
+				<field name="name" />
+			</search>
+		</field>
+	</record>
+</odoo>
