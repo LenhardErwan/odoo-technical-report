@@ -8,5 +8,4 @@ class Report(models.Model):
     name = fields.Char('Title', required=True)
     date_published = fields.Date('Published Date')
     block_ids = fields.One2many('tr.block', 'report_id', string='Content')
-    globalreport_id = fields.Many2one(
-        'tr.globalreport', string='Global Report ID')
+    globalreport_id = fields.Many2one('tr.globalreport', string='Global Report ID')
