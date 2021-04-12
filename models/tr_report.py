@@ -7,4 +7,5 @@ class Report(models.Model):
 
     name = fields.Char('Title', required=True)
     date_published = fields.Date('Published Date')
+    globalreport_id = fields.One2many('tr.globalreport', 'report_ids')
     block_ids = fields.One2many('tr.block', string='Content')
