@@ -8,6 +8,8 @@
 
 	<menuitem name="Technical Reports" id="tr_base_menu" />
 	<menuitem name="Global Reports" id="tr_global_report_menu" parent="tr_base_menu" action="tr_global_report_action" />
+	<menuitem name="Global Reports List" id="tr_global_report_menu" parent="tr_base_menu" action="tr_global_report_view_tree" />
+	<menuitem name="Global Reports Search" id="tr_global_report_view_search" parent="tr_base_menu" action="tr_global_report_view_tree" />
 
 	<record id="tr_global_report_view_form" model="ir.ui.view">
 		<field name="name">Global Report Form</field>
