@@ -21,7 +21,7 @@
 	</record>
 
 	<record id="tr_report_view_tree" model="ir.ui.view">
-		<field name="name">Reports</field>
+		<field name="name">Report List</field>
 		<field name="model">tr.report</field>
 		<field name="arch" type="xml">
 			<tree>
