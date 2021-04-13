@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+	<record id='tr_report_action' model='ir.actions.act_window'>
+		<field name="name">Technical Reports</field>
+		<field name="res_model">tr.report</field>
+		<field name="view_mode">tree,form</field>
+	</record>
+
+	<record id="tr_global_report_view_form" model="ir.ui.view">
+		<field name="name">Global Report Form</field>
+		<field name="model">tr.globalreport</field>
+		<field name="arch" type="xml">
+			<form>
+				<group>
+					<field name="name" />
+					<field name="date_published" />
+					<field name="block_ids" widget="one2many_tags" />
+				</group>
+			</form>
+		</field>
+	</record>
+
+	<record id="tr_global_report_view_tree" model="ir.ui.view">
+		<field name="name">Reports</field>
+		<field name="model">tr.report</field>
+		<field name="arch" type="xml">
+			<tree>
+				<field name="name" />
+				<field name="date_published" />
+			</tree>
+		</field>
+	</record>
+
+	<record id="tr_global_report_view_search" model="ir.ui.view">
+		<field name="name">Report Search</field>
+		<field name="model">tr.report</field>
+		<field name="arch" type="xml">
+			<search>
+				<field name="name" />
+			</search>
+		</field>
+	</record>
+</odoo>
