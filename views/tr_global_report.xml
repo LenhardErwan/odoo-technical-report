@@ -15,13 +15,9 @@
 		<field name="arch" type="xml">
 			<form>
 				<group>
-					<group>
-						<field name="name" />
-						<field name="report_ids" widget="one2many_tags" />
-					</group>
-					<group>
-						<field name="command_id" widget="many2one_tags" />
-					</group>
+					<field name="name" />
+					<field name="report_ids" widget="one2many_tags" />
+					<field name="command_id" widget="many2one_tags" />
 				</group>
 			</form>
 		</field>
