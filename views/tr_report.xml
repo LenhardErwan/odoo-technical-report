@@ -27,7 +27,6 @@
 			<tree>
 				<field name="name" />
 				<field name="date_published" />
-				<field name="block_ids" widget="one2many_tags" />
 			</tree>
 		</field>
 	</record>
