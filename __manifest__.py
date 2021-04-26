@@ -2,7 +2,7 @@
     'name': 'Technical Reporting',
     'description': 'Report manage intervention reports',
     'author': 'Castel Jeremy, Lenhard Erwan, Very-Griette Milan',
-    'depends': ['base', 'account'],
+    'depends': ['base', 'account', 'account_move'],
     'data': [
 			'security/groups.xml',
 			'security/ir.model.access.csv',
