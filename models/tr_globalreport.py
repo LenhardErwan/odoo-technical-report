@@ -8,4 +8,4 @@ class GlobalReport(models.Model):
     name = fields.Char('Title', required=True)
     report_ids = fields.One2many(
         'tr.report', 'globalreport_id', string='Report')
-    command_id = fields.Many2one('account.invoice')
+    invoice_id = fields.Many2one(comodel_name='account.invoice', String='Invoice')
