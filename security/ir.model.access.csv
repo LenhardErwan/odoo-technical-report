@@ -2,6 +2,6 @@ id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
 acl_block,tr.block_default,model_tr_block,,1,0,0,0
 acl_report,tr.report_default,model_tr_report,,1,0,0,0
 acl_globalreport,tr.globalreport_default,model_tr_globalreport,,1,0,0,0
-acl_reporter,tr.reporter.block,model_tr_block,group_reporter,1,1,1,1
-acl_reporter,tr.reporter.report,model_tr_report,group_reporter,1,1,1,1
-acl_reporter,tr.reporter.globalreport,model_tr_globalreport,group_reporter,1,1,1,1
+acl_reporter_block,tr.reporter.block,model_tr_block,group_reporter,1,1,1,1
+acl_reporter_report,tr.reporter.report,model_tr_report,group_reporter,1,1,1,1
+acl_reporter_global_report,tr.reporter.globalreport,model_tr_globalreport,group_reporter,1,1,1,1
