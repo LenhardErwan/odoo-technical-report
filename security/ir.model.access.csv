@@ -1,5 +1,5 @@
 id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
-acl_block,tr.block default,model_report,,1,0,0,0
-acl_report,tr.report default,model_report,,1,0,0,0
-acl_globalreport,tr.globalreport default,model_report,,1,0,0,0
-acl_reporter,tr.reporter,model_report,group_reporter,1,1,1,1
+acl_block,tr.block default,model_tr_block,,1,0,0,0
+acl_report,tr.report default,model_tr_report,,1,0,0,0
+acl_globalreport,tr.globalreport default,model_tr_globalreport,,1,0,0,0
+acl_reporter,tr.reporter,model_tr_reporter,group_reporter,1,1,1,1
