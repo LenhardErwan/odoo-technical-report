@@ -9,7 +9,7 @@ Pour lancer le serveur odoo, il faut se placer dans le répertoire home de gr1 p
 `./odoo/odoo-bin`
 
 # Connexion
-Assurez-vous que le serveur est lancé, rendez-vous sur l'adresse : http://144.76.169.108:10000 et connectez-vous avec un des comptes disponibles :
+Assurez-vous que le serveur est lancé, rendez-vous sur l'adresse : http://localhost:10000 et connectez-vous avec un des comptes disponibles :
 |Nom de compte|Mot de passe|Groupe Reporter|
 |-------------|------------|-------------|
 |admin        |azertyuiop  |oui          |
@@ -116,7 +116,9 @@ Le fichier `groups.xml` permet de créer notre groupe Reporter et attribue tous 
 
 Enfin, le tableur `ir.model.access.csv` définit les règles de création, d'écriture, de lecture et de suppression, que ce soit pour les utilisateurs simples ou les membres du groupe Reporter.
 
-# Piste d'amélioration
+# Pistes d'amélioration
  - Visualisation d'une image dans les blocs
  - Support du format Markown ou BBCode dans les blocs de texte
  - Ajouter des personnes à un rapport
+ - Affiner les régles de sécurité
+ - Notification par mail
