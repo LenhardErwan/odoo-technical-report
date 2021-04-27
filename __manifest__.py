@@ -1,5 +1,5 @@
 {
-    'name': 'Technical Reporting',
+    'name': 'Technical Report',
     'description': 'Report manage intervention reports',
     'author': 'Castel Jeremy, Lenhard Erwan, Very-Griette Milan',
     'depends': ['base', 'account'],
