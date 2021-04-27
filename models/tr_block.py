@@ -17,4 +17,4 @@ class Block(models.Model):
             if block.image:
                 block.image_exist = True
             else:
-                block.image_exist = True
+                block.image_exist = False
